@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skaner zdjęć</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container pt-4" style="max-width: 500px">
+    <div class="card">
+      <div class="card-body text-center">
+        <p>Podaj adres strony, na której chcesz znaleźć zdjęcia</p>
+        <form action="/skanuj" method="POST">
+          <input type="text" class="form-control" name="url" placeholder="https://...">
+          <button class="btn btn-info mt-2">Skanuj</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
